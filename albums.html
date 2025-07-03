@@ -6,6 +6,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   <!-- ✅ This is where the navbar will be injected -->
+  <nav id="navbar"></nav>
+
+  <!-- ✅ This script dynamically loads nav.html into #navbar -->
+  <script>
+    fetch('nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
   <div class="grid">
     <img src="Neon Wave TEXT.jpg" alt="Image 1">
     <img src="Neon Wave 2 Text.jpeg" alt="Image 2">
