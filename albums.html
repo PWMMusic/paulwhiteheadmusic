@@ -10,11 +10,39 @@
       padding: 2rem;
       color: #333;
     }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .grid img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .grid img:hover {
+      transform: scale(1.05);
+    }
+    
   </style>
 </head>
 <body>
   <h1>About</h1>
-  <p>This is production album page for Paul Whitehead Music.</p>
+<h1>Gallery</h1>
+
+  <div class="grid">
+    <img src="Neon Wave Text.jpg" alt="Image 1">
+    <img src="Neon Wave 2 Text.jpg" alt="Image 2">
+    <img src="Neon Wave 3 Text.jpg" alt="Image 3">
+    <img src="images/image4.jpg" alt="Image 4">
+    <!-- Add more images as needed -->
+  </div>
   <a href="index.html">Back to Home</a>
 </body>
 </html>
